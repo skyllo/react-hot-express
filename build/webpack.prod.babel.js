@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import merge from 'webpack-merge';
+import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
 import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
 import base from './webpack.base.babel';
 
@@ -9,7 +10,14 @@ export default merge(base, {
   output: {
     filename: '[name].[hash].js'
   },
-  plugins: [
-    new UglifyJSPlugin()
-  ]
+  optimization: {
+    minimizer: [
+      new UglifyJSPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: false
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  }
 });
