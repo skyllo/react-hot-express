@@ -29,6 +29,7 @@ if (!isProd) {
   });
 } else {
   app.use(compression());
+
   app.use(express.static('dist/public', {
     setHeaders(res, resPath) {
       // do not set Cache-Control for index page
