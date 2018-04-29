@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js --exec babel-node --watch src/server build",
+    "dev": "nodemon index.js --exec babel-node --watch src/server --watch build",
     "build": "rm -rf dist/* && npm run build:client && npm run build:server",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.prod.babel.js",
     "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.babel.js",
