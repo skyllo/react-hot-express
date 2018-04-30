@@ -1,5 +1,7 @@
 # react-hot-express
 
+Hot realoding starter project with React and Express.
+
 # Dependencies
 - Webpack 4+
 - Babel 7+
@@ -7,6 +9,7 @@
 - React Hot Loader 4+
 - Express 4+
 - Jest + Enzyme
+- Sass
 - ESLint
 
 # Commands
