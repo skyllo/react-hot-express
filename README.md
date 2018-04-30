@@ -10,6 +10,7 @@ Hot realoding starter project with React and Express.
 - Express 4+
 - Jest + Enzyme
 - Sass
+- MiniCssExtractPlugin
 - ESLint
 
 # Commands
