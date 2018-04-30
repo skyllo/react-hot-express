@@ -12,7 +12,7 @@
 Development
 ```
 yarn dev
-``
+```
 
 Production
 ```
