@@ -7,6 +7,7 @@
 - React Hot Loader 4+
 - Express 4+
 - Jest + Enzyme
+- ESLint
 
 # Commands
 Development
@@ -17,4 +18,9 @@ yarn dev
 Production
 ```
 yarn build && yarn start
+```
+
+Test
+```
+yarn test
 ```
