@@ -1,6 +1,6 @@
 # react-hot-express
 
-Hot realoding starter project with React and Express.
+Hot reloading starter project with React and Express.
 
 # Dependencies
 - Webpack 4+
