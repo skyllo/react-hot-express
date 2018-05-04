@@ -6,7 +6,7 @@ export default merge(base, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    'webpack-hot-middleware/client',
+    'webpack-hot-middleware/client?reload=true',
     './src/client/index.jsx'
   ],
   plugins: [
